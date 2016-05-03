@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundler": "wepack"
+    "bundler": "wepack",
+    "serve" : "node serve.js"
   },
   "keywords": [
     "reddit",

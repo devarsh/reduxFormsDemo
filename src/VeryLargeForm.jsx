@@ -2,8 +2,7 @@ import React,{Component} from 'react'
 import {Field,reduxForm} from 'redux-form'
 
 const validate = (values) => {
-	
-	
+		
 	const errors = {} 	
 	errors.person = {}
 	if(!values.person)
@@ -121,7 +120,7 @@ class LargeForm extends Component {
 export default reduxForm({
 form :'SimpleForm',
 validate,
-//asyncValidate : asyncValidate,
-//asyncBlurFields : ['person.firstName','person.lastName']
+asyncValidate : asyncValidate,
+asyncBlurFields : ['person.firstName','person.lastName']
 })(LargeForm)
 
