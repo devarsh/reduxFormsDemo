@@ -3,9 +3,13 @@ import {Field,reduxForm} from 'redux-form'
 
 const validate = (values) => {
 	
-	values.person = {}
+	
 	const errors = {} 	
 	errors.person = {}
+	if(!values.person)
+	{
+		values.person = {}
+	}
 	if(!values.person.firstName)
 	{
 		errors.person.firstName = 'Required Field'
