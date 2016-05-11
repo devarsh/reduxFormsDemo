@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "bundler": "wepack",
-    "serve" : "node serve.js"
+    "serve": "node serve.js"
   },
   "keywords": [
     "reddit",
@@ -47,9 +47,13 @@
     "redux-logger": "^2.6.1",
     "redux-thunk": "^2.0.1",
     "sass-loader": "^3.2.0",
+    "socket.io": "^1.4.6",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "osquery": "^1.0.0"
   }
 }
